@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krstn\\.vscode\\cse210\\prove1\\prove1.csproj",
+      "projectUniqueName": "C:\\Users\\krstn\\.vscode\\cse210\\cse210-01\\prove1.csproj",
       "projectName": "prove1",
-      "projectPath": "C:\\Users\\krstn\\.vscode\\cse210\\prove1\\prove1.csproj",
+      "projectPath": "C:\\Users\\krstn\\.vscode\\cse210\\cse210-01\\prove1.csproj",
       "packagesPath": "C:\\Users\\krstn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krstn\\.vscode\\cse210\\prove1\\obj\\",
+      "outputPath": "C:\\Users\\krstn\\.vscode\\cse210\\cse210-01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\krstn\\AppData\\Roaming\\NuGet\\NuGet.Config"
