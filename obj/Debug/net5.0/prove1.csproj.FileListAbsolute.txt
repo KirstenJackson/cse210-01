@@ -1,0 +1,16 @@
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.csproj.AssemblyReference.cache
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.AssemblyInfoInputs.cache
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.AssemblyInfo.cs
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.csproj.CoreCompileInputs.cache
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.exe
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.deps.json
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.runtimeconfig.json
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.runtimeconfig.dev.json
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.dll
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\ref\prove1.dll
+C:\Users\krstn\.vscode\cse210\prove1\bin\Debug\net5.0\prove1.pdb
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.dll
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\ref\prove1.dll
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.pdb
+C:\Users\krstn\.vscode\cse210\prove1\obj\Debug\net5.0\prove1.genruntimeconfig.cache
