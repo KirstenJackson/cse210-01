@@ -12,20 +12,38 @@ namespace prove1
     {
         static void Main(string[] args)
         {
+            
 
-            // while winner= false, play game
-
-
+            // while play == true, play game
+            
             string player = "x";
             // player = player == 'x' ？ 'o' : 'x';
             // toggle between x and o like brother thayne demonstrated in class            
+    
+            MakeBoard("1", "1");
+            CheckWinner(MakeBoard(GetUserInput(), player));
 
-            
-            MakeBoard(GetUserInput(), player);
+            // Boolean winner = CheckWinner(MakeBoard(GetUserInput(), player));
 
-            // string userInput = GetUserInput();
-            // string grid = MakeGrid();
-            // Console.WriteLine(grid);
+            // while (winner == false)
+            // {
+            //     winner = CheckWinner(MakeBoard(GetUserInput(), player));
+
+            // }
+
+
+            // Boolean playing = true;
+
+            // if (CheckWinner(MakeBoard(GetUserInput(), player)) == false)
+            // {
+            //     CheckWinner(MakeBoard(GetUserInput(), player));
+            //     player = player == "x" ? "o" : "x";
+            // }
+            // else 
+            // {
+            //     Console.WriteLine("The End.");
+            // }
+
 
             string GetUserInput()
             {
@@ -36,7 +54,7 @@ namespace prove1
 
             // give it a type that it'll return. If it doesnt return anything, then void is the type
 
-            void MakeBoard(string move, string player)
+            System.Collections.Generic.List<string> MakeBoard(string move, string player)
             {
                 List<string> board = new List<string>();
 
@@ -49,26 +67,21 @@ namespace prove1
                 board.Add("7");
                 board.Add("8");
                 board.Add("9");
+                // because I'm adding these every time, the grid doesn't update correctly...
 
-                for(int i=0; i<board.Count; i++ )
+                for (int i = 0; i < board.Count; i++)
                 {
-                    if(board[i].Contains(move))
+                    if (board[i].Contains(move))
                         board[i] = player;
                 }
-
-                // don't forget to do the inital print 
-                // add replace thingy here to change the output
-
-                // for (int i = 0; i < board.Count; i++)
-                // {
-                //     Console.WriteLine(board[i]);
-                // }
 
                 Console.WriteLine($"{board[0]}|{board[1]}|{board[2]}");
                 Console.WriteLine("-+-+-");
                 Console.WriteLine($"{board[3]}|{board[4]}|{board[5]}");
                 Console.WriteLine("-+-+-");
                 Console.WriteLine($"{board[6]}|{board[7]}|{board[8]}");
+
+                return board;
 
             }
 
@@ -85,27 +98,31 @@ namespace prove1
             // vertical 036, 147, 258
             // diagonal 048, 246
 
-            // string CheckWinner(string board)
-            // {
-            //     if (
-            //     (board[0] == player && board[1] == player && board[2] == player) ||
-            //     (board[3] == player && board[4] == player && board[5] == player) ||
-            //     (board[6] == player && board[7] == player && board[8] == player) ||
+            Boolean CheckWinner(System.Collections.Generic.List<string> board)
+            {
+                if (
+                (board[0] == player && board[1] == player && board[2] == player) ||
+                (board[3] == player && board[4] == player && board[5] == player) ||
+                (board[6] == player && board[7] == player && board[8] == player) ||
 
-            //     (board[0] == player && board[3] == player && board[6] == player) ||
-            //     (board[1] == player && board[4] == player && board[7] == player) ||
-            //     (board[2] == player && board[5] == player && board[8] == player) ||
+                (board[0] == player && board[3] == player && board[6] == player) ||
+                (board[1] == player && board[4] == player && board[7] == player) ||
+                (board[2] == player && board[5] == player && board[8] == player) ||
 
-            //     (board[0] == player && board[4] == player && board[8] == player) ||
-            //     (board[2] == player && board[4] == player && board[6] == player)
-            // )
-            // {
-            //     Console.WriteLine($"Congrats! Player {player} won!");
-            // }
+                (board[0] == player && board[4] == player && board[8] == player) ||
+                (board[2] == player && board[4] == player && board[6] == player)
+            )
+                {
 
-            // };
+                    Console.WriteLine($"Congrats! Player {player} won!");
+                    return true;
+                }
+                else
+                    return false;
 
-            
+            };
+
+
 
 
 
